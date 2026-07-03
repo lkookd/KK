@@ -1,0 +1,10 @@
+#!name=Telegram 选择客户端
+#!desc=t.me 链接选择 Telegram / Swiftgram / Nicegram / 网页打开
+#!author=kk
+#!arguments=client:auto
+
+[Script]
+http-request ^https?:\/\/(t\.me|telegram\.me|telegram\.dog)\/.* script-path=https://raw.githubusercontent.com/你的GitHub用户名/你的仓库/main/tg-chooser.js, requires-body=false, timeout=10, tag=Telegram选择客户端
+
+[MITM]
+hostname = t.me, telegram.me, telegram.dog
